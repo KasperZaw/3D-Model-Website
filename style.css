@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.car {
+    height:1200px;
+    width: 100%;
+    position: absolute;
+    top: -20%;
+}
+
+#car-model-2 {
+    display: none;
+}
+
+#car-model-4 {
+    display: none;
+}
+.chose-car {
+    position: relative;
+    top: 40%;
+    left: 0%;
+    font-size: 50px;
+    text-align: center;
+    z-index: 2;
+    font-family: 'Racing Sans One', cursive;
+    width: 400px;
+}
+
+ input {
+    width: 100%;
+    border: none;
+    background: blueviolet;
+}
+
