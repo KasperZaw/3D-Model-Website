@@ -9,6 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #666666;
 }
 
 .car {
@@ -16,6 +17,7 @@ body {
     width: 100%;
     position: absolute;
     top: -20%;
+    left: 5%;
 }
 
 #car-model-2 {
@@ -28,17 +30,76 @@ body {
 .chose-car {
     position: relative;
     top: 40%;
-    left: 0%;
-    font-size: 50px;
+    left: 5%;
+    font-size: 30px;
     text-align: center;
     z-index: 2;
-    font-family: 'Racing Sans One', cursive;
+    font-family:sans-serif ;
     width: 400px;
+    color: rgb(25, 25, 25);
 }
 
- input {
+#model-slider.changer {
     width: 100%;
     border: none;
-    background: blueviolet;
+    background: rgb(223, 11, 11);
 }
 
+span {
+    position: absolute;
+    font-size: 40px;
+    z-index: 2;
+    top: 5%;
+    left: 44%;
+    color: rgb(25, 25, 25);
+    font-family: 'Racing Sans One', cursive;
+}
+
+.stats {
+    background-image: url(liquid-marbling-paint-texture-background-fluid-painting-abstract-texture-intensive-color-mix-wallpaper.jpg);
+    height: 100vh;
+    width: 300px;
+    z-index: 2;
+    position: absolute;
+    left: 0%;
+    background-size: cover;
+}
+.progres-container {
+    position: absolute;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(129, 129, 129);
+}
+
+.progres-container progress {
+    height: 35px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+
+  progress::-webkit-progress-bar {
+    background-color: #3a3a3a;
+    border-radius: 50px;
+  }
+  
+  progress::-webkit-progress-value {
+    background-color: #b80202;
+    border-radius: 50px;
+    animation: progress-bar 5s ease-in-out;
+  }
+  
+  @keyframes progress-bar {
+    0% { width: 0%; }
+    100% { width: 100%; }
+  }
+  

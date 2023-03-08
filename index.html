@@ -13,16 +13,29 @@
     
 </head>
 <body>
+    <span id="car-name">lamborghini terzo</span>
     <div class="chose-car">
         <label for="model-slider">CHOOSE A MODEL</label>
-        <input type="range" id="model-slider" min="1" max="3" step="1" value="1">
+        <input type="range" id="model-slider" min="1" max="3" step="1" value="1" class="changer">
+    </div>
+
+    <div class="stats">
+        <div class="progres-container"> 
+            <label for="progress1">Horse Power:</label>
+            <progress id="hp-bar" value="770" max="1000"></progress>
+            <label for="progress2">Top Speed</label>
+            <progress id="speed-bar" value="350" max="500"></progress>
+            <label for="progress3">To 100km</label>
+            <progress id="acceleration-bar" value="3.6" max="10"></progress>
+            <label for="progress4">Newton</label>
+            <progress id="torque-bar" value="850" max="1000"></progress>
+        </div>
     </div>
     <model-viewer src="./model1/scene.gltf" alt="A 3D model of a car" shadow-intensity="1" camera-controls auto-rotate auto-rotate-delay="50" ar class="car" id="car-model-1">
     </model-viewer>
     <model-viewer src="./model2/scene.gltf" alt=" car" shadow-intensity="1" camera-controls auto-rotate auto-rotate-delay="50" ar class="car" id="car-model-2">
     </model-viewer> <model-viewer src="./model4/scene.gltf" alt=" car" shadow-intensity="1" camera-controls auto-rotate auto-rotate-delay="50" ar class="car" id="car-model-4">
     </model-viewer>
-
 
     <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script> 
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
